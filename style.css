@@ -1,0 +1,75 @@
+/*
+Theme Name: Change Happens
+Description: Hello World Child Theme
+Author: Lisa Wells
+Template: hello-world
+Version: 1.0.0
+*/
+
+article.sticky {
+  box-shadow: 0 0 0 1px #ccc, 0 0 0 4px #fff, 0 0 0 5px #ccc;
+  padding: 1em;
+  margin-bottom: 4em;
+}
+
+.post-sticky .entry-content {
+  padding-bottom: 0;
+  position: relative;
+}
+
+#burst-cta {
+background-image: url(../change-happens/images/starShape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    z-index: 200;
+    position: absolute;
+    width: 184px;
+    height: 184px;
+    bottom: -155px;
+    right: -69px;
+    -webkit-transform: rotate(14deg);
+    -moz-transform: rotate(14deg);
+    -ms-transform: rotate(14deg);
+    -o-transform: rotate(14deg);
+    transform: rotate(14deg);
+}
+
+#burst-cta:hover {
+  opacity: .9;
+}
+
+#burst-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#burst-text p {
+  margin: 0 0 .4em 0;
+  font-style: italic;
+  line-height: 1;
+}
+
+#burst-text p:nth-child(2) {
+  font-style: normal;
+  text-transform: uppercase;
+  color: #a4d6e1;
+  border-top: 1px #fff solid;
+  padding-top: 4px;
+}
+
+
+@media screen and (min-width: 783px) {
+  .main-navigation div.menu > ul,
+  .main-navigation ul.menu {
+    padding-right: 0;
+  }
+}
+
