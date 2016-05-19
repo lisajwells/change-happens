@@ -1,0 +1,42 @@
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the #content div and all content after
+ *
+ */
+?>
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+
+		<?php get_sidebar( 'footer' ); ?>
+
+		<div id="colophon-content">
+			<div id="footer-contact"><a id="contact-link" href="#">Click here to Contact</a></div>
+
+			<div id="footer-social">
+				<a id="linkedin" href="https://www.linkedin.com/in/donna-agajanian-28999532"></a>
+				<a id="facebook" href="https://www.facebook.com/changehappens99/"></a>
+				<img src="<?php get_home_url() ?>/~changeh8/wp-content/uploads/2016/05/icflogowhite-copy.png" alt="International Coach Federation logo">
+			</div>
+
+			<div id="footer-copyright"><p>&copy; <?php echo date ( 'Y' ); ?>. All Rights Reserved.</p></div>
+
+			<div id="legal-links">
+				<a href="">Disclaimer</a>
+				<a href="">Privacy Policy</a>
+				<a href="">Terms of Use</a>
+			</div>
+			<p id="devcred">Site development by <a href="http://lisajaynewells.com/">Lisa Wells</a></p>
+
+		</div>
+
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<?php wp_footer(); ?>
+
+</body>
+</html>

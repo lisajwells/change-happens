@@ -1,0 +1,84 @@
+#colophon {
+  padding-bottom: 4em;
+  padding-top: 2em;
+      border-top: solid 1px #eee;
+}
+
+#footer-social a:before {
+    border: solid 1px #bbb;
+    border-radius: 50%;
+    color: #999;
+    display: inline-block;
+    font: normal 18px/1 Genericons;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 8px;
+    padding: 6px;
+    position: relative;
+    vertical-align: middle;
+}
+
+#footer-social a[href*="facebook.com"]:before {
+    content: "\f204";
+}
+
+#footer-social a[href*="linkedin.com"]:before {
+    content: "\f207";
+}
+
+#footer-contact, #footer-social, #footer-copyright {
+    float: left;
+    width: 33%;
+}
+
+#footer-contact {
+    text-align: left;
+}
+
+#footer-contact a {
+  color: #3872b8;
+}
+#footer-contact a:hover {
+  color: #5687c3;
+}
+
+#footer-social {
+    text-align: center;
+}
+
+#footer-copyright {
+    text-align: right;
+}
+
+#colophon > p,
+#footer-copyright {
+  float: right;
+}
+
+#footer-social img {
+  width: 80px;
+}
+
+#legal-links {
+  clear: both;
+  width: 50%;
+  float: left;
+  /*display: inline-block;*/
+}
+#legal-links a {
+  font-size: .9rem;
+  margin-right: 1rem;
+}
+#devcred {
+  font-size: .9rem;
+  float: right;
+  margin: 0;
+  width: 50%;
+  text-align: right;
+}
+#devcred a {
+  color: #3872b8;
+}
+#devcred a:hover {
+  color: #5687c3;
+}
+
