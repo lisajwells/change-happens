@@ -12,7 +12,9 @@ function enqueue_parent_styles() {
 // including changehappens js
 add_action( 'wp_enqueue_scripts', 'enqueue_changehappens_js' );
 function enqueue_changehappens_js() {
-    wp_enqueue_script( 'changehappens_js', get_stylesheet_directory_uri() . '/js/changehappens.js', array(), true );
+    if (is_page('thank-you-guide')) {
+        wp_enqueue_script( 'changehappens_js', get_stylesheet_directory_uri() . '/js/changehappens.js', array(), true );
+    }
 }
 
 // including child theme template-tags
@@ -33,11 +35,4 @@ function ch_theme_thumb() {
 // }
 // add_action('wp_head', 'add_meta_for_pdf', 1);
 
-function add_meta_for_pdf() {
-    if (is_page('thank-you-guide')) { ?>
-        <script>
-            window.open('http://changehappens.dev/wp-content/uploads/2016/05/ChangeHappensMock.pdf', '_blank');
-        </script><?php
-    }
-}
-add_action('wp_head', 'add_meta_for_pdf', 1);
+// add script to guide-thank-you page for auto pdf download target_blank
