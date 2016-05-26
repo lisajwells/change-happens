@@ -28,30 +28,43 @@ article.sticky {
   position: relative;
 }
 
-#burst-cta {
-background-image: url(../change-happens/images/starShape.png);
+#burst-cta,
+#burst-cta-about {
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-    color: #fff;
-    z-index: 200;
-    position: absolute;
-    width: 184px;
     height: 184px;
-    bottom: -155px;
-    right: -69px;
+    text-align: center;
+    width: 184px;
     -webkit-transform: rotate(14deg);
     -moz-transform: rotate(14deg);
     -ms-transform: rotate(14deg);
     -o-transform: rotate(14deg);
     transform: rotate(14deg);
+    z-index: 200;
 }
 
-#burst-cta:hover {
+#burst-cta {
+    background-image: url(../change-happens/images/star_shape_white-w-blue.png);
+    bottom: -155px;
+    color: rgb(0,178,199);
+    position: absolute;
+    right: -69px;
+}
+
+#burst-cta-about {
+    background-image: url(../change-happens/images/star_shape_blue-w-blue.png);
+    bottom: 0;
+    color: #fff;;
+    position: relative;
+    right: 0;
+}
+
+#burst-cta-about:hover {
   opacity: .9;
 }
 
-#burst-text {
+#burst-text,
+#burst-text-about {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -62,19 +75,35 @@ background-image: url(../change-happens/images/starShape.png);
   transform: translate(-50%, -50%);
 }
 
-#burst-text p {
-  color: #fff;
+#burst-text p,
+#burst-text-about p {
   margin: 0 0 .4em 0;
   font-style: italic;
   line-height: 1;
 }
 
-#burst-text p:nth-child(2) {
+#burst-text p {
+  color: rgb(0,178,199);
+}
+
+#burst-text-about p {
+  color: #fff;
+}
+
+#burst-text p:nth-child(2),
+#burst-text-about p:nth-child(2) {
   font-style: normal;
   text-transform: uppercase;
-  color: #a4d6e1;
-  border-top: 1px #fff solid;
-  padding-top: 4px;
+  border-top: 1px rgb(0,178,199) solid;
+  padding-top: 8px;
+}
+
+#burst-text p:nth-child(2) {
+  color: rgb(112,62,126);
+}
+
+#burst-text-about p:nth-child(2) {
+  color: rgb(0,178,199);
 }
 
 .post-thumbnail {
@@ -103,6 +132,14 @@ div#secondary {
   display: block;
   max-width: 280px;
   margin: 0 auto;
+}
+
+/* thank you pages */
+
+.page-id-859 h2,
+.page-id-834 h2,
+.page-id-865 h2 {
+  margin-top: 0;
 }
 
 /** FOOTER **/
