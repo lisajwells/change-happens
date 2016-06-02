@@ -35,11 +35,6 @@ article.sticky {
     height: 184px;
     text-align: center;
     width: 184px;
-    -webkit-transform: rotate(14deg);
-    -moz-transform: rotate(14deg);
-    -ms-transform: rotate(14deg);
-    -o-transform: rotate(14deg);
-    transform: rotate(14deg);
     z-index: 200;
 }
 
@@ -49,6 +44,11 @@ article.sticky {
     color: rgb(0,178,199);
     position: absolute;
     right: -69px;
+    -webkit-transform: rotate(14deg);
+    -moz-transform: rotate(14deg);
+    -ms-transform: rotate(14deg);
+    -o-transform: rotate(14deg);
+    transform: rotate(14deg);
 }
 
 #burst-cta-about {
