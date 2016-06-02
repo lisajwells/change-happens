@@ -25,9 +25,9 @@
 			<div id="footer-copyright"><p>&copy; <?php echo date ( 'Y' ); ?>. All Rights Reserved.</p></div>
 
 			<div id="legal-links">
-				<a href="">Disclaimer</a>
-				<a href="">Privacy Policy</a>
-				<a href="">Terms of Use</a>
+				<a href="http://77.104.139.80/~changeh8/disclaimer/">Disclaimer</a>
+				<a href="http://77.104.139.80/~changeh8/privacy-policy/">Privacy Policy</a>
+				<a href="http://77.104.139.80/~changeh8/terms-of-use/">Terms of Use</a>
 			</div>
 			<p id="devcred">Site development by <a href="http://lisajaynewells.com/">Lisa Wells</a></p>
 
