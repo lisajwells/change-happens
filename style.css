@@ -101,6 +101,7 @@ article.sticky {
   font-style: normal;
   text-transform: uppercase;
   border-top: 1px rgb(0,178,199) solid;
+  margin: 0px 23px 0;
   padding-top: 8px;
 }
 
