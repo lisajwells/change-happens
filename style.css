@@ -70,12 +70,12 @@ article.sticky {
 #burst-text {
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  left: 40%;
+  -webkit-transform: translate(-33%, -50%);
+  -moz-transform: translate(-33%, -50%);
+  -ms-transform: translate(-33%, -50%);
+  -o-transform: translate(-33%, -50%);
+  transform: translate(-33%, -50%);
 }
 
 #burst-text-about {
@@ -101,8 +101,10 @@ article.sticky {
   font-style: normal;
   text-transform: uppercase;
   border-top: 1px rgb(0,178,199) solid;
-  margin: 0px 23px 0;
   padding-top: 8px;
+}
+#burst-text-about p:nth-child(2) {
+  margin: 0px 23px 0;
 }
 
 .post-thumbnail {

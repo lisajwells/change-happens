@@ -44,7 +44,7 @@
 						<div id="burst-text">
 							<p>Let's Talk!</p>
 							<p>Click Here</p>
-							<p>For a free 15 minute call</p>
+							<p>For a free <br>15-minute call</p>
 						</div>
 					</div></a>
 				</div><!-- .entry-summary -->
