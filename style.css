@@ -267,6 +267,14 @@ div#secondary {
   background-color: rgb(97,200,208) !important;
 }
 
+.pum-title {
+  margin-bottom: -50px; /* to fight extra aweber <p> */
+}
+
+.poweredBy p {
+  margin-bottom: -44px; /* to fight extra aweber <p> */
+}
+
 .af-form,
 .pum-title {
   color: #fff !important;
