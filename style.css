@@ -280,6 +280,11 @@ div#secondary {
   color: #fff !important;
 }
 
+.af-form textarea {
+    margin-top: 7px;
+    margin-bottom: 14px;
+}
+
 .af-element.privacyPolicy {
     margin-top: 20px !important;
 }
