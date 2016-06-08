@@ -26,7 +26,7 @@
 
 <?php else : ?>
 
-	<?php if ( is_sticky() ): ?>
+	<?php if ( is_sticky() && is_front_page() ): ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="post-sticky">
