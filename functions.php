@@ -27,3 +27,22 @@ add_action( 'after_setup_theme', 'ch_theme_thumb', 11 );
 function ch_theme_thumb() {
     set_post_thumbnail_size( 300 );
 }
+
+// get rid of the second-page sticky post
+add_action( 'pre_get_posts', function ( WP_Query $query ) {
+
+    if ( ! $query->is_main_query() ) {
+        return;
+    }
+
+    if ( ! $query->is_home() ) {
+        return;
+    }
+
+    if ( $query->get( 'paged', 1 ) == 1 ) {
+        return;
+    }
+
+    $query->set ( 'post__not_in', array( 658 ) );
+
+});
