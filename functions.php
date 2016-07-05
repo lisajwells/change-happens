@@ -28,21 +28,38 @@ function ch_theme_thumb() {
     set_post_thumbnail_size( 300 );
 }
 
-// get rid of the second-page sticky post
-add_action( 'pre_get_posts', function ( WP_Query $query ) {
+// get rid of the second-page sticky post (from theme dev takao)
+add_action( 'pre_get_posts', 'remove_sticky_posts_from_the_loop' );
+function remove_sticky_posts_from_the_loop( $q ) {
+   if ( $q->is_home() && $q->is_main_query() && $q->get( 'paged' ) > 1 ) {
+       $q->set( 'post__not_in', get_option( 'sticky_posts' ) );
+   }
+}
 
-    if ( ! $query->is_main_query() ) {
-        return;
-    }
+// get rid of the second-page sticky post (from tim)
+// add_action( 'pre_get_posts', function ( WP_Query $query ) {
 
-    if ( ! $query->is_home() ) {
-        return;
-    }
+//     if ( ! $query->is_main_query() ) {
+//         return;
+//     }
 
-    if ( $query->get( 'paged', 1 ) == 1 ) {
-        return;
-    }
+//     if ( ! $query->is_home() ) {
+//         return;
+//     }
 
-    $query->set ( 'post__not_in', array( 658 ) );
+//     if ( $query->get( 'paged', 1 ) == 1 ) {
+//         return;
+//     }
 
-});
+//     $query->set ( 'post__not_in', array( 658 ) );
+
+// });
+
+// add_action( 'pre_get_posts', function ( WP_Query $query ) {
+
+//     if ( $query->get( 'paged', 1 ) == 1 ) {
+//        $query->set ( 'post__not_in', array( 658 ) );
+//         return;
+//     }
+
+// });
