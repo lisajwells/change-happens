@@ -28,6 +28,21 @@ function ch_theme_thumb() {
     set_post_thumbnail_size( 300 );
 }
 
+// add google analytics code to footer ala wpbeginner
+add_action('wp_footer', 'add_googleanalytics');
+function add_googleanalytics() { ?>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79938587-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+<?php }
+
 // get rid of the second-page sticky post (from theme dev takao)
 add_action( 'pre_get_posts', 'remove_sticky_posts_from_the_loop' );
 function remove_sticky_posts_from_the_loop( $q ) {
