@@ -17,8 +17,8 @@
 			<div id="footer-contact"><a id="contact-link" href="#">Click here to Contact</a></div>
 
 			<div id="footer-social">
-				<a id="linkedin" href="https://www.linkedin.com/in/donna-agajanian-28999532"></a>
-				<a id="facebook" href="https://www.facebook.com/changehappens99/"></a>
+				<a id="linkedin" href="https://www.linkedin.com/in/donna-agajanian-28999532" target="_blank"></a>
+				<a id="facebook" href="https://www.facebook.com/ChangeHappensCoaching" target="_blank"></a>
 				<img src="<?php get_home_url() ?>/~changeh8/wp-content/uploads/2016/05/icflogowhite-copy.png" alt="International Coach Federation logo">
 			</div>
 
