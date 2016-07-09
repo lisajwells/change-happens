@@ -218,7 +218,10 @@ div#secondary {
 
 #footer-contact a {
   color: #000;
+  display: block;
+  margin-bottom: 1em;
 }
+
 #footer-contact a:hover {
   color: #fff;
 }

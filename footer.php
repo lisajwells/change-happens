@@ -14,7 +14,7 @@
 		<?php get_sidebar( 'footer' ); ?>
 
 		<div id="colophon-content">
-			<div id="footer-contact"><a id="contact-link" href="#">Click here to Contact</a></div>
+			<div id="footer-contact"><a id="contact-link" href="#">Click to Contact</a><a id="subscribe-link" href="#">Click to Subscribe</a></div>
 
 			<div id="footer-social">
 				<a id="linkedin" href="https://www.linkedin.com/in/donna-agajanian-28999532" target="_blank"></a>
